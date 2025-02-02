@@ -12,13 +12,8 @@
 }
 
 body {
-    height: 100vh;
     margin: 2rem 15rem;
     border: 2px solid black;
-}
-
-header {
-    border-bottom: 2px solid black;
 }
 
 ul {
@@ -27,13 +22,13 @@ ul {
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .navbar {
     justify-content: space-between;
     align-items: center;
     margin: 1em 2em 0 2em;
+    
 }
 
 .navbar-links {
@@ -54,7 +49,8 @@ ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 7em 0 8rem 0;
+    padding: 7em 0 8rem 0;
+    border-bottom: 2px solid black;
 }
 
 .title > * {
@@ -64,4 +60,50 @@ ul {
 .title h1 {
     font-size: 3.5em;
     font-weight: 700;
+}
+
+.main {
+    justify-content: space-between;
+    height: auto;
+}
+
+.main-outer-section {
+    flex: 1;
+    padding: 1em;
+}
+
+.main-outer-section h2 {
+    font-size: 1.5em;
+    padding-bottom: .5em;
+}
+
+.main-middle-section {
+    flex: 2;
+    flex-direction: column;
+    justify-content: start;
+    /* padding: 1em; */
+}
+
+.projects-list li {
+    font-size: 1.25em;
+    font-weight: 500;
+    padding: .5em 0 .25em 1em;
+    border-bottom: 2px solid black;
+}
+
+#projects {
+    border-right: 2px solid black;
+}
+
+#work-experience {
+    border-bottom: 2px solid black;
+    padding: 1em;
+}
+
+#education {
+    border-left: 2px solid black;
+}
+
+#opensource {
+    padding: 1em;
 }
